@@ -18,7 +18,7 @@ int main(){
         int data_terima = -1;
         MPI_Recv(&data_terima, 1, MPI_INT, MPI_ANY_SOURCE, 1, 
             MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-        print("Rank %d Terima data %d \n", rank, data_terima);
+        printf("Rank %d Terima data %d \n", rank, data_terima);
     }
     MPI_Finalize();
 }
